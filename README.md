@@ -1,23 +1,28 @@
 # Run
 
-To run
+To run  on server with public IP address
 
 ```  docker-compose up ```
+
+This will build and deploy application service and apache containers, and serve the UI on port 80
+
+Needs tweaking to run on localhost
 
 # Design
 
 https://docs.google.com/document/d/e/2PACX-1vS5Ic8JQ91TSn0MRJYloWqs2QNi-1cS-61l9fzqiIS-aIsd4UkvTs_7rET0DaTp9qZoyCaDCF1b-n9q/pub
 
-# Configuration
+# Backend Service
+## Configuration
 
 config.env contains all the env variables we can configure e.g. db settings, ethereum node url etc. The flag `USE_DB_STORAGE` can be used to toggle between database storage and in-memory storage.
 If this flag is true, please make sure you have setup database first by running `scripts/db.sql` and database credentials are properly setup.
 
-# Building the project
+## Building 
 
 To build project, run `go build main.go`. This will generate an executable which when run, starts the server. By default, it uses port 80 which can be configured in config.env file.
 
-# Endpoints
+## Endpoints
 
 `POST /invoice`:
 
