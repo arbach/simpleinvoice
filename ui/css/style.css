@@ -57,7 +57,7 @@ img{
   bottom: 0;
   margin: auto;
   width: 260px;
-  height: 480px;
+  height: 680px;
   border-radius: 5px;
   background: rgba(3,3,3,0.25);
   box-shadow: 1px 1px 50px #000;
@@ -237,4 +237,9 @@ a:hover{
 #container2{
 display: none;
 width: 35%;
+}
+
+p {
+    color:white;
+    margin:36px;
 }

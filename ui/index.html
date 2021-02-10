@@ -17,7 +17,7 @@
   </img>
 </div>
 <div id="container" class="form1" >
-  <h1>Generate</h1>
+  <h1>New Invoice</h1>
   <span class="close-btn">
     <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
   </span>
@@ -31,9 +31,27 @@
 </div> 
 
 <div id="container2" class="form2" >
+
   <h1>Details</h1>
-   
    <form  id="f2" method="POST"  >
+
+    <p>
+  Please process payment for this invoice before it expires.
+  <br />
+  <br />
+   - Send payment on Rinkeby test network to the payment address below. Unit is ETH.
+
+  <br />
+   - Click on check status to update the status.
+  <br />
+   - To check status for another invoice, enter id and click "Check Status".
+
+  <br />
+  <br />
+
+  Thank you for your business!
+
+    </p>
     <input type="text" id="invoice_id" name="id" placeholder="Enter ID Here...">
     <input type="text" id="amount" name="amount" placeholder="amount" readonly>
     <input type="text" id="description" name="description" placeholder="description" readonly>

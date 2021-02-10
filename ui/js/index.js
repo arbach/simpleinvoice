@@ -31,7 +31,7 @@ function openForm2(){
     invoice.description = desc.value; 
 
     console.log(invoice);
-    var url = window.location.protocol + "//" + window.location.host + "/invoice";
+    var url =  'http://13.59.13.143/invoice';
 
     $.ajax({
         url: url,
@@ -61,7 +61,7 @@ function openForm1(){
 }
 function checkStatus(){
   var invoiceId = document.querySelector("#f2 #invoice_id");
-  let url = "/invoice?id=" + invoiceId.value;
+  let url = "http://13.59.13.143/invoice?id=" + invoiceId.value;
   fetch(url).then((response) => {
     return response.json();
   }).then(data => {
