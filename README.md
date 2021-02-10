@@ -1,3 +1,13 @@
+# Run
+
+To run
+
+```  docker-compose up ```
+
+# Design
+
+https://docs.google.com/document/d/e/2PACX-1vS5Ic8JQ91TSn0MRJYloWqs2QNi-1cS-61l9fzqiIS-aIsd4UkvTs_7rET0DaTp9qZoyCaDCF1b-n9q/pub
+
 # Configuration
 
 config.env contains all the env variables we can configure e.g. db settings, ethereum node url etc. The flag `USE_DB_STORAGE` can be used to toggle between database storage and in-memory storage.
