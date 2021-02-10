@@ -11,6 +11,8 @@ services:
   ui:
     build:
       context: ui/
+    links:
+      - invoice
     ports:
       - 80:80
 
