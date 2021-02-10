@@ -1,0 +1,18 @@
+version: '3'
+
+services: 
+  invoice:
+    build:
+      context: service/
+    command: ./simpleinvoice
+    ports:
+      - 82:80
+
+  ui:
+    build:
+      context: ui/
+    ports:
+      - 80:80
+
+
+
